@@ -1,0 +1,36 @@
+"infiltration"
+{
+	"base"		"base"
+	"title"		"Infiltration"
+	"maps"		"^inf_"
+	"menusystem"	"1"
+	
+	
+	"settings"
+	{
+		1
+		{
+			"name"		"inf_roundtime"
+			"text"		"Round Time"
+			"help"		"How long each round is (In seconds)."
+			"type"		"numeric"
+			"default"	"300"
+		}
+		2
+		{
+			"name"		"inf_preptime"
+			"text"		"Prep Time"
+			"help"		"How long preparation is for each round (In seconds)."
+			"type"		"numeric"
+			"default"	"30"
+		}
+		3
+		{
+			"name"		"inf_endtime"
+			"text"		"End Time"
+			"help"		"How long the end time is (In seconds)."
+			"type"		"numeric"
+			"default"	"10"
+		}
+	}
+}
