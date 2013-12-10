@@ -1,4 +1,4 @@
-print("Server code running.")
+print("Intializing Garry's Mod Gamemode Infiltration.")
 
 map = game.GetMap()
 
