@@ -4,6 +4,14 @@ b = "noteam"
 c = "No Team"
 d = ""
 cc = Color(255, 255, 255, 255)
+
+Teams= {}
+
+Teams.Infil = {}
+Teams.Guard = {}
+Teams.Infil.Hud = {name = "Infiltrator", color = Color(255,0,0,255)}
+Teams.Guard.Hud = {name = "Defender", color = Color(0,255,0,255)}
+
 function getTime(thetime)
 	a = thetime:ReadString()
 end
@@ -22,11 +30,11 @@ function GM:HUDPaint() --Draw text on screen.
 		c = "No Team"
 		cc = Color(250, 250, 210, 255)
 	elseif b == "baddies" then
-		c = "Infiltrator"
-		cc = Color(255, 0, 0, 255)
+		c = Teams.Infil.Hud.name
+		cc = Teams.Infil.Hud.color
 	elseif b == "goodies" then
-		c = "Defender"
-		cc = Color(0, 255, 0, 255)
+		c = Teams.Guard.Hud.name
+		cc = Teams.Guard.Hud.color
 	end
 	draw.SimpleText(c, "DermaLarge", ScrW() / 2, 63, cc, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	draw.SimpleText(d, "DermaLarge", ScrW() / 2, ScrH() / 2, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
